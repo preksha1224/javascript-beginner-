@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   <script src="./test.js">
-   </script>
+    <script src="./test.js"></script>
     <script>
-
-alert("Hello, World! From head tag.");
-        console.log("Git change: Hello, World! From head tag.");
-        console.log("Hello, World! From head tag.");
+      alert("Hello, World! From head tag.");
+      console.log("Git change: Hello, World! From head tag.");
+      console.log("Hello, World! From head tag.");
     </script>
-</head>
-<body>
+  </head>
+  <body>
+    <p id="message">Hello!! Hi There</p>
+    <p id="goodbye">By!! Have a nice day</p>
+    <button onclick="tryText()">Try to see the Message</button>
     <script>
+      document.getElementById("message").innerText("Hi I am Fine");
+      document.getElementById("goodbye").innerHTML("<b><i>See you<i></b>");
+      document.write("Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+      console.log(10 / 3, "A");
+      console.log(10 / 2, "A");
+      console.log(10 / 5, "B");
+      console.log(10 / 4, "C");
 
-        console.log("Hello, World! From Body tag.");
-        alert("Hello, World! From Body tag.");
+      console.log("Hello, World! From Body tag.");
+      alert("Hello, World! From Body tag.");
     </script>
-</body>
+  </body>
 </html>
