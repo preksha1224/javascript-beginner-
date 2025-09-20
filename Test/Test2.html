@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Final Result Example</title>
+</head>
+<body>
+  
+    <p id="finalresult"></p>
+    <script>
+        const text = "  JavaScript is amazing and JavaScript is powerful  ";
+        const cleanText = text.trim();
+
+        const words = cleanText.split(/\s+/);
+        const wordCount = {};
+        words.forEach(w => {
+            wordCount[w] = (wordCount[w] ) + 1;
+        });
+
+            const output = `{\n  cleanText: "${cleanText}",\n  wordCount: ${JSON.stringify(wordCount, null, 2)}\n}`;
+            document.getElementById("finalresult").textContent = output;
+      console.log(output);
+    </script>
+</body>
+</html>
